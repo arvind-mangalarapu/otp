@@ -40,4 +40,4 @@ You can preview the production build with `npm run preview`.
 
 # preview-url
 
->  https://4006bdf3.otp-3jt.pages.dev/
+>  https://otp-3jt.pages.dev/
