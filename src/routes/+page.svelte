@@ -6,3 +6,4 @@
 
 <Otp />
 <OtpAuto />
+<Timer />
