@@ -37,3 +37,7 @@ You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
 # otp
+
+# preview-url
+
+>  https://4006bdf3.otp-3jt.pages.dev/
