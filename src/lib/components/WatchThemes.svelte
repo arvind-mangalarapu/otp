@@ -64,7 +64,7 @@
 						? 'ring-blue-600'
 						: theme === 'classic'
 							? 'ring-yellow-600'
-							: 'ring-green-500'
+							: 'ring-pink-500'
 		}`}
 	>
 		<!-- Hour Hand -->
@@ -88,7 +88,7 @@
 				theme === 'minimalist'
 					? 'bg-gray-600'
 					: theme === 'retro'
-						? 'bg-black'
+						? 'bg-pink'
 						: theme === 'modern'
 							? 'bg-teal-400'
 							: theme === 'classic'
