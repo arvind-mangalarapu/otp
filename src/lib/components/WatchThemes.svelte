@@ -86,9 +86,9 @@
 		<div
 			class={`hand minute ${
 				theme === 'minimalist'
-					? 'bg-gray-600'
+					? 'bg-gray-900'
 					: theme === 'retro'
-						? 'bg-pink'
+						? 'bg-green-500'
 						: theme === 'modern'
 							? 'bg-teal-400'
 							: theme === 'classic'
@@ -127,10 +127,10 @@
 		transform-origin: 100%;
 	}
 	.hour {
-		height: 4px;
+		height: 6px;
 	}
 	.minute {
-		height: 2px;
+		height: 3px;
 	}
 	.second {
 		height: 1px;
