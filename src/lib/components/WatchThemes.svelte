@@ -45,32 +45,76 @@
 	</div>
 
 	<div
-		class={`relative w-64 h-64 border-4 rounded-full ${theme === 'minimalist' ? 'border-gray-400' : theme === 'retro' ? 'border-yellow-600' : theme === 'modern' ? 'border-blue-600' : theme === 'classic' ? 'border-black' : 'border-green-500'}`}
+		class={`relative w-64 h-64 border-4 rounded-full ${
+			theme === 'minimalist'
+				? 'border-gray-400'
+				: theme === 'retro'
+					? 'border-yellow-600'
+					: theme === 'modern'
+						? 'border-blue-600'
+						: theme === 'classic'
+							? 'border-green-900'
+							: 'border-green-500'
+		} ${
+			theme === 'minimalist'
+				? 'ring-gray-400'
+				: theme === 'retro'
+					? 'ring-yellow-600'
+					: theme === 'modern'
+						? 'ring-blue-600'
+						: theme === 'classic'
+							? 'ring-yellow-600'
+							: 'ring-green-500'
+		}`}
 	>
-		{#each Array(12).fill() as _, i}
-			<div
-				class="absolute w-0.5 h-8 bg-gray-600"
-				style="transform: rotate({i * 30}deg) translate(0, -32px);"
-			></div>
-		{/each}
 		<!-- Hour Hand -->
 		<div
-			class={`hand hour ${theme === 'minimalist' ? 'bg-gray-800' : theme === 'retro' ? 'bg-yellow-900' : theme === 'modern' ? 'bg-blue-800' : theme === 'classic' ? 'bg-black' : 'bg-lime-500'}`}
+			class={`hand hour ${
+				theme === 'minimalist'
+					? 'bg-gray-800'
+					: theme === 'retro'
+						? 'bg-yellow-900'
+						: theme === 'modern'
+							? 'bg-blue-800'
+							: theme === 'classic'
+								? 'bg-red-600'
+								: 'bg-yellow-400'
+			}`}
 			style="transform: rotate({hour * 30}deg);"
 		></div>
 		<!-- Minute Hand -->
 		<div
-			class={`hand minute ${theme === 'minimalist' ? 'bg-gray-600' : theme === 'retro' ? 'bg-black' : theme === 'modern' ? 'bg-teal-400' : theme === 'classic' ? 'bg-gray-600' : 'bg-cyan-500'}`}
+			class={`hand minute ${
+				theme === 'minimalist'
+					? 'bg-gray-600'
+					: theme === 'retro'
+						? 'bg-black'
+						: theme === 'modern'
+							? 'bg-teal-400'
+							: theme === 'classic'
+								? 'bg-gray-600'
+								: 'bg-cyan-400'
+			}`}
 			style="transform: rotate({minute * 6}deg);"
 		></div>
 		<!-- Second Hand -->
 		<div
-			class={`hand second ${theme === 'minimalist' ? 'bg-gray-500' : theme === 'retro' ? 'bg-red-800' : theme === 'modern' ? 'bg-red-500' : theme === 'classic' ? 'bg-red-600' : 'bg-magenta-500'}`}
+			class={`hand second ${
+				theme === 'minimalist'
+					? 'bg-gray-500'
+					: theme === 'retro'
+						? 'bg-red-800'
+						: theme === 'modern'
+							? 'bg-red-500'
+							: theme === 'classic'
+								? 'bg-red-600'
+								: 'bg-pink-400'
+			}`}
 			style="transform: rotate({second * 6}deg);"
 		></div>
 		<!-- Center Dot -->
 		<div
-			class="absolute w-4 h-4 bg-black rounded-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+			class="absolute w-4 h-4 bg-yellow-400 rounded-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
 		></div>
 	</div>
 </div>
