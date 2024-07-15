@@ -94,7 +94,7 @@
 		</div>
 
 		<!-- Digital timer display -->
-		<div class="text-4xl mb-4">{$displayTime}</div>
+		<div class="text-4xl mb-4 max-w-full mx-auto">{$displayTime}</div>
 
 		<!-- Control buttons -->
 		<div class="flex space-x-4">
